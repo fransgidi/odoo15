@@ -1,0 +1,7 @@
+======================================
+Geedy Accounting ( geedy_accounting )
+======================================
+
+* base_account_budget
+* base_accounting_kit
+* dynamic_accounts_report

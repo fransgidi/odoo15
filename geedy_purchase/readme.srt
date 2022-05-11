@@ -1,0 +1,6 @@
+======================================
+Geedy Purchase ( geedy_purchase)
+======================================
+
+* purchase_request
+* Multiple Percentage Discount & Fix Discount

@@ -1,0 +1,76 @@
+<?xml version="1.0" ?>
+<!-- Copyright 2018-2019 ForgeFlow, S.L.
+     License LGPL-3.0 or later (https://www.gnu.org/licenses/lgpl-3.0) -->
+<odoo>
+    <record id="purchase_order_form" model="ir.ui.view">
+        <field name="name">purchase.order.form</field>
+        <field name="model">purchase.order</field>
+        <field name="inherit_id" ref="purchase.purchase_order_form" />
+        <field name="arch" type="xml">
+            <xpath expr="//field[@name='order_line']/tree" position="attributes">
+                <attribute name="editable"/>
+            </xpath>
+            <xpath expr="//field[@name='order_line']/tree/field[@name='taxes_id']" position="after">
+                <field name="discount" string="Disc.%"/>
+            </xpath>
+            <xpath expr="//field[@name='order_line']/tree" position="inside">
+                <field name="purchase_request_lines" invisible="1" />
+                <button
+                    attrs="{'invisible': [('purchase_request_lines', '=', [])]}"
+                    name="action_open_request_line_tree_view"
+                    type="object"
+                    icon="fa-folder-open-o"
+                />
+            </xpath>
+            <xpath expr="//field[@name='order_line']/form/group/group" position="inside">
+                <field name="discount_type"/>
+                <field name="fix_discount" groups="product.group_discount_per_so_line"
+                    attrs="{'invisible': [('discount_type', 'not in', ['fix'])]}"/>
+                <label for="multi_discount" groups="product.group_discount_per_so_line"
+                    attrs="{'invisible': [('discount_type', 'not in', ['multi'])]}"/>
+                <div name="multi_discount" groups="product.group_discount_per_so_line"
+                    attrs="{'invisible': [('discount_type', 'not in', ['multi'])]}">
+                    <field name="multi_discount" placeholder="50+20" class="oe_inline"/> %%
+                </div>
+                <field name="discount" readonly="1"/>
+            </xpath>
+            <xpath expr="//field[@name='order_line']/form/group/group[2]" position="inside">
+                <field name="purchase_request_lines" invisible="1" />
+                <button
+                    attrs="{'invisible': [('purchase_request_lines', '=', [])]}"
+                    name="action_open_request_line_tree_view"
+                    string="Purchase Request Line"
+                    type="object"
+                    icon="fa-folder-open-o"
+                />
+            </xpath>
+        </field>
+    </record>
+    <record id="purchase_order_line_form2" model="ir.ui.view">
+        <field name="name">purchase.order.line.form2</field>
+        <field name="model">purchase.order.line</field>
+        <field name="inherit_id" ref="purchase.purchase_order_line_form2" />
+        <field name="arch" type="xml">
+            <field name="name" position="after">
+                <separator string="Purchase Request Lines" />
+                <field name="purchase_request_lines" />
+            </field>
+        </field>
+    </record>
+    <record id="purchase_order_line_tree" model="ir.ui.view">
+        <field name="name">purchase.order.line.tree</field>
+        <field name="model">purchase.order.line</field>
+        <field name="inherit_id" ref="purchase.purchase_order_line_tree" />
+        <field name="arch" type="xml">
+            <xpath expr="//tree" position="inside">
+                <field name="purchase_request_lines" invisible="1" />
+                <button
+                    attrs="{'invisible': [('purchase_request_lines', '=', [])]}"
+                    name="action_open_request_line_tree_view"
+                    type="object"
+                    icon="fa-folder-open-o"
+                />
+            </xpath>
+        </field>
+    </record>
+</odoo>

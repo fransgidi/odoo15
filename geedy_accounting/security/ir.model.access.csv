@@ -1,0 +1,38 @@
+id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
+access_budget_budget,budget.budget,model_budget_budget,account.group_account_manager,1,1,1,1
+access_account_budget_post,account.budget.post,model_account_budget_post,account.group_account_manager,1,1,1,1
+access_account_budget_post_accountant,account.budget.post accountant,model_account_budget_post,account.group_account_user,1,1,1,1
+access_budget_budget_accountant,budget.budget accountant,model_budget_budget,account.group_account_user,1,1,1,1
+access_budget_lines_accountant,budget.lines accountant,model_budget_lines,account.group_account_user,1,1,1,1
+access_budget,budget.lines manager,model_budget_lines,base.group_user,1,1,1,0
+
+access_financial_report_user,account_fin_rep_name_user,model_account_financial_report,account.group_account_user,1,1,1,1
+access_financial_report_manager,account_fin_rep_name_manager,model_account_financial_report,account.group_account_manager,1,1,1,1
+access_generate_recurring_entries,generate.recurring.entries.user,model_account_recurring_payments,account.group_account_user,1,1,1,1
+access_account_followup_manager,account.followup.manager,model_account_followup,account.group_account_manager,1,1,1,1
+access_account_followup_user,account.followup.user,model_account_followup,account.group_account_user,1,1,1,1
+access_followup_line,followup.line,model_followup_line,account.group_account_manager,1,1,1,1
+access_account_followup_line_user,account.followup.line.user,model_followup_line,account.group_account_user,1,1,1,1
+
+access_account_asset_category,account.asset.category,model_account_asset_category,account.group_account_user,1,0,0,0
+access_asset_modify_user,access_asset_modify_user,model_asset_modify,account.group_account_user,1,0,0,0
+access_asset_modify_manager,access_asset_modify_manager,model_asset_modify,account.group_account_manager,1,1,1,1
+access_account_asset_asset,account.asset.asset,model_account_asset_asset,account.group_account_user,1,0,0,0
+access_account_asset_category_manager,account.asset.category,model_account_asset_category,account.group_account_manager,1,1,1,1
+access_account_asset_asset_manager,account.asset.asset,model_account_asset_asset,account.group_account_manager,1,1,1,1
+access_account_asset_depreciation_line,account.asset.depreciation.line,model_account_asset_depreciation_line,account.group_account_user,1,0,0,0
+access_account_asset_depreciation_line_manager,account.asset.depreciation.line,model_account_asset_depreciation_line,account.group_account_manager,1,1,1,1
+access_asset_asset_report,asset.asset.report,model_asset_asset_report,account.group_account_user,1,0,0,0
+access_asset_asset_report_manager,asset.asset.report,model_asset_asset_report,account.group_account_manager,1,1,1,1
+access_account_asset_category_invoicing_payment,account.asset.category,model_account_asset_category,account.group_account_invoice,1,0,0,0
+access_account_asset_asset_invoicing_payment,account.asset.asset,model_account_asset_asset,account.group_account_invoice,1,0,1,0
+access_account_asset_depreciation_line_invoicing_payment,account.asset.depreciation.line,model_account_asset_depreciation_line,account.group_account_invoice,1,0,1,0
+
+
+access_account_general_ledger,access.account.general.ledger,model_account_general_ledger,account.group_account_user,1,1,1,1
+access_account_trial_balance,access.account.trial.balance,model_account_trial_balance,account.group_account_user,1,1,1,1
+access_account_cash_flow,access.account.cash.flow,model_account_cash_flow,account.group_account_user,1,1,1,1
+access_dynamic_balance_sheet_report,access.dynamic.balance.sheet.report,model_dynamic_balance_sheet_report,account.group_account_user,1,1,1,1
+access_account_partner_ledger,access.account.partner.ledger,model_account_partner_ledger,account.group_account_user,1,1,1,1
+access_account_partner_ageing,account_partner_ageing.account_partner_ageing,model_account_partner_ageing,account.group_account_user,1,1,1,1
+access_account_day_book,account_day_book.account_day_book,model_account_day_book,account.group_account_user,1,1,1,1

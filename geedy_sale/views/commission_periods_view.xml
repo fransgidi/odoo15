@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+    <record id="view_comm_periods_tree" model="ir.ui.view">
+        <field name="name">commission.periods.tree</field>
+        <field name="model">commission.periods</field>
+        <field name="priority">4</field>
+        <field name="arch" type="xml">
+            <tree string="Commission Periods" multi_edit="1">
+                <field name="name" optional="show"/>
+                <field name="start_date" optional="show"/>
+                <field name="end_date" optional="show"/>
+                <field name="state"/>
+            </tree>
+        </field>
+    </record>
+
+    <record id="view_comm_periods_form" model="ir.ui.view">
+        <field name="name">commission.periods.form</field>
+        <field name="model">commission.periods</field>
+        <field name="arch" type="xml">
+            <form string="Commission Periods">
+                <header>
+                    <button name="action_confirm" id="action_confirm"
+                        string="Conform" class="btn-primary" type="object"
+                        attrs="{'invisible': [('state', 'not in', ['draft'])]}"/>
+                    <button name="create_monthly" id="create_monthly"
+                        string="Create Monthly" type="object"
+                        attrs="{'invisible': [('state', 'not in', ['draft'])]}"/>
+                    <field name="state" widget="statusbar" statusbar_visible="draft,settle"/>
+                </header>
+                <sheet>
+                    <div class="oe_title">
+                        <h1>
+                            <field name="name"/>
+                        </h1>
+                    </div>
+                    <group name="comm_periods_header">
+                        <group name="comm_periods_details">
+                            <field name="start_date"/>
+                            <field name="end_date"/>
+                        </group>
+                    </group>
+                    <notebook>
+                        <page string="Periods" name="periods_lines">
+                            <field name="periods_line" widget="section_and_note_one2many"
+                                mode="tree,form" attrs="{'readonly': [('state', 'not in', ['draft'])]}">
+                                <form>
+                                    <group>
+                                        <field name="start_date"/>
+                                        <field name="end_date"/>
+                                        <field name="comm_settle_id" domain="[('state', '=', 'settle')]"/> 
+                                    </group>
+                                </form>
+                                <tree editable="bottom">
+                                    <control>
+                                        <create name="add_product_control" string="Add a product"/>
+                                        <create name="add_section_control" string="Add a section" context="{'default_display_type': 'line_section'}"/>
+                                        <create name="add_note_control" string="Add a note" context="{'default_display_type': 'line_note'}"/>
+                                    </control>
+                                    <field name="start_date"/>
+                                    <field name="end_date"/>
+                                    <field name="comm_settle_id"/>
+                                </tree>
+                            </field>
+                        </page>
+                    </notebook>
+                </sheet>
+            </form>
+        </field>
+    </record>
+
+    <record id="view_comm_periods_filter" model="ir.ui.view">
+        <field name="name">commission.periods.list.select</field>
+        <field name="model">commission.periods</field>
+        <field name="priority" eval="15"/>
+        <field name="arch" type="xml">
+            <search string="Search Commission Periods">
+                <field name="start_date"/>
+                <field name="end_date"/>
+                <filter string="Today Start" name="today_start"
+                    domain="[('start_date', '=', context_today().strftime('%Y-%m-%d'))]"/>
+                <filter string="Today End" name="today_end"
+                    domain="[('end_date', '=', context_today().strftime('%Y-%m-%d'))]"/>
+                <filter string="In Activities" name="today_activity"
+                    domain="[('start_date', '&gt;', context_today().strftime('%Y-%m-%d')), ('end_date', '&lt;', context_today().strftime('%Y-%m-%d'))]"/>
+                <group expand="0" string="Group By">
+                    <filter string="Number" name="name" domain="[]" context="{'group_by': 'name'}"/>
+                    <filter name="start_date" string="Start Date" domain="[]" context="{'group_by': 'start_date'}"/>
+                    <filter name="end_date" string="End Date" domain="[]" context="{'group_by': 'end_date'}"/>
+                </group>
+           </search>
+        </field>
+    </record>
+
+    <record id="action_comm_periods" model="ir.actions.act_window">
+        <field name="name">Commission Periods</field>
+        <field name="type">ir.actions.act_window</field>
+        <field name="res_model">commission.periods</field>
+        <field name="view_mode">tree,form</field>
+        <field name="search_view_id" ref="view_comm_periods_filter"/>
+        <field name="help" type="html">
+            <p class="o_view_nocontent_smiling_face">
+                Create a new Commission Periods !
+            </p>
+        </field>
+    </record>
+
+    <record id="comm_periods_action_view_tree" model="ir.actions.act_window.view">
+        <field name="sequence" eval="1"/>
+        <field name="view_mode">tree</field>
+        <field name="view_id" ref="geedy_sale.view_comm_periods_tree"/>
+        <field name="act_window_id" ref="action_comm_periods"/>
+    </record>
+    <record id="comm_preiods_action_view_form" model="ir.actions.act_window.view">
+        <field name="sequence" eval="2"/>
+        <field name="view_mode">form</field>
+        <field name="view_id" ref="geedy_sale.view_comm_periods_form"/>
+        <field name="act_window_id" ref="action_comm_periods"/>
+    </record>
+
+    <menuitem id="menu_comm_periods" action="action_comm_periods" parent="menu_commission_config" sequence="2"/>
+
+</odoo>

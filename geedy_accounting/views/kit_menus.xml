@@ -1,0 +1,30 @@
+
+<odoo>
+
+    <record id="geedy_accounting.menu_Balance_report" model="ir.ui.menu">
+        <field name="active" eval="False"/>
+    </record>
+    <record id="geedy_accounting.menu_general_leadger" model="ir.ui.menu">
+        <field name="active" eval="False"/>
+    </record>
+    <record id="geedy_accounting.menu_aged_trial_balance" model="ir.ui.menu">
+        <field name="active" eval="False"/>
+    </record>
+    <record id="geedy_accounting.menu_partner_leadger" model="ir.ui.menu">
+        <field name="active" eval="False"/>
+    </record>
+    <record id="geedy_accounting._account_financial_reports_balance_sheet" model="ir.ui.menu">
+        <field name="active" eval="False"/>
+    </record>
+    <record id="geedy_accounting.account_financial_reports_profit_loss" model="ir.ui.menu">
+        <field name="active" eval="False"/>
+    </record>
+        <record id="geedy_accounting.account_reports_daily_reports" model="ir.ui.menu">
+        <field name="active" eval="False"/>
+    </record>
+    <record id="geedy_accounting.menu_account_cash_flow_report" model="ir.ui.menu">
+        <field name="active" eval="False"/>
+    </record>
+
+
+</odoo>

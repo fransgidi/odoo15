@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+    <record id="view_commission_report_tree" model="ir.ui.view">
+        <field name="name">commission.commission.tree</field>
+        <field name="model">commission.commission</field>
+        <field name="arch" type="xml">
+            <tree string="Commission Report" create="false" edit="false">
+                <field name="salesperson" optional="show"/>
+                <field name="sales_team" optional="show"/>
+                <field name="start_date" optional="show"/>
+                <field name="end_date" optional="show"/>
+                <field name="amount_reach" optional="show"/>
+                <field name="commission_amount" optional="show"/>
+            </tree>
+        </field>
+    </record>
+
+    <record model="ir.ui.view" id="view_commission_report_pivot">
+        <field name="name">commission.commission.pivot</field>
+        <field name="model">commission.commission</field>
+        <field name="arch" type="xml">
+            <pivot string="Commission Report" sample="1">
+                <field name="salesperson" type="row"/>
+                <field name="amount_reach" type="measure"/>
+                <field name="commission_amount" type="measure"/>
+            </pivot>
+        </field>
+    </record>
+
+    <record id="action_commission_report" model="ir.actions.act_window">
+        <field name="name">Commission Report</field>
+        <field name="type">ir.actions.act_window</field>
+        <field name="res_model">commission.commission</field>
+        <field name="view_mode">pivot,tree</field>
+        <field name="help" type="html">
+            <p class="o_view_nocontent_smiling_face">
+                Create a new Commission Report !
+            </p>
+        </field>
+    </record>
+
+    <record id="commission_report_action_view_pivot" model="ir.actions.act_window.view">
+        <field name="sequence" eval="1"/>
+        <field name="view_mode">pivot</field>
+        <field name="view_id" ref="geedy_sale.view_commission_report_pivot"/>
+        <field name="act_window_id" ref="action_commission_report"/>
+    </record>
+    <record id="commission_report_action_view_tree" model="ir.actions.act_window.view">
+        <field name="sequence" eval="2"/>
+        <field name="view_mode">tree</field>
+        <field name="view_id" ref="geedy_sale.view_commission_report_tree"/>
+        <field name="act_window_id" ref="action_commission_report"/>
+    </record>
+
+    <menuitem id="menu_commission_report" action="action_commission_report" parent="sale.menu_sale_report" sequence="2"/>
+
+</odoo>

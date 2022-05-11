@@ -1,0 +1,6 @@
+======================================
+Geedy Purchase ( geedy_sale)
+======================================
+
+* Multiple Percentage Discount & Fix Discount
+* Commission

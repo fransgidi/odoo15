@@ -1,0 +1,1408 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# * geedy_purchase
+#
+# Translators:
+# OCA Transbot <transbot@odoo-community.org>, 2016
+msgid ""
+msgstr ""
+"Project-Id-Version: purchase-workflow (10.0)\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2016-11-17 03:38+0000\n"
+"PO-Revision-Date: 2016-10-22 22:24+0000\n"
+"Last-Translator: OCA Transbot <transbot@odoo-community.org>\n"
+"Language-Team: Hungarian (http://www.transifex.com/oca/OCA-purchase-"
+"workflow-10-0/language/hu/)\n"
+"Language: hu\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+#. module: geedy_purchase
+#: code:addons/geedy_purchase/models/purchase_order.py:0
+#, python-format
+msgid "<li><b>%s</b>: Ordered quantity %s %s, Planned date %s</li>"
+msgstr ""
+
+#. module: geedy_purchase
+#: code:addons/geedy_purchase/models/purchase_order.py:0
+#: code:addons/geedy_purchase/models/geedy_purchase_allocation.py:0
+#: code:addons/geedy_purchase/models/stock_picking.py:0
+#, python-format
+msgid "<li><b>%s</b>: Received quantity %s %s</li>"
+msgstr ""
+
+#. module: geedy_purchase
+#: code:addons/geedy_purchase/models/stock_move_line.py:0
+#, python-format
+msgid "<li><b>%s</b>: Transferred quantity %s %s</li>"
+msgstr ""
+
+#. module: geedy_purchase
+#: model_terms:ir.ui.view,arch_db:geedy_purchase.report_geedy_purchase
+msgid "<strong>Analytic Account</strong>"
+msgstr ""
+
+#. module: geedy_purchase
+#: model_terms:ir.ui.view,arch_db:geedy_purchase.report_geedy_purchase
+msgid ""
+"<strong>Assigned to:</strong>\n"
+"                                <br/>"
+msgstr ""
+
+#. module: geedy_purchase
+#: model_terms:ir.ui.view,arch_db:geedy_purchase.report_geedy_purchase
+msgid ""
+"<strong>Creation Date:</strong>\n"
+"                                <br/>"
+msgstr ""
+
+#. module: geedy_purchase
+#: model_terms:ir.ui.view,arch_db:geedy_purchase.report_geedy_purchase
+msgid ""
+"<strong>Description:</strong>\n"
+"                                <br/>"
+msgstr ""
+
+#. module: geedy_purchase
+#: model_terms:ir.ui.view,arch_db:geedy_purchase.report_geedy_purchase
+msgid "<strong>Description</strong>"
+msgstr ""
+
+#. module: geedy_purchase
+#: model_terms:ir.ui.view,arch_db:geedy_purchase.report_geedy_purchase
+msgid "<strong>Estimated Cost</strong>"
+msgstr ""
+
+#. module: geedy_purchase
+#: model_terms:ir.ui.view,arch_db:geedy_purchase.report_geedy_purchase
+msgid ""
+"<strong>Picking Type:</strong>\n"
+"                                <br/>"
+msgstr ""
+
+#. module: geedy_purchase
+#: model_terms:ir.ui.view,arch_db:geedy_purchase.report_geedy_purchase
+msgid "<strong>Product UoM</strong>"
+msgstr ""
+
+#. module: geedy_purchase
+#: model_terms:ir.ui.view,arch_db:geedy_purchase.report_geedy_purchase
+msgid "<strong>Qty</strong>"
+msgstr ""
+
+#. module: geedy_purchase
+#: model_terms:ir.ui.view,arch_db:geedy_purchase.report_geedy_purchase
+msgid ""
+"<strong>Request Reference:</strong>\n"
+"                                <br/>"
+msgstr ""
+
+#. module: geedy_purchase
+#: model_terms:ir.ui.view,arch_db:geedy_purchase.report_geedy_purchase
+msgid "<strong>Requested Date</strong>"
+msgstr ""
+
+#. module: geedy_purchase
+#: model_terms:ir.ui.view,arch_db:geedy_purchase.report_geedy_purchase
+msgid ""
+"<strong>Requested by:</strong>\n"
+"                                <br/>"
+msgstr ""
+
+#. module: geedy_purchase
+#: model_terms:ir.ui.view,arch_db:geedy_purchase.report_geedy_purchase
+msgid ""
+"<strong>Source:</strong>\n"
+"                                <br/>"
+msgstr ""
+
+#. module: geedy_purchase
+#: model_terms:ir.ui.view,arch_db:geedy_purchase.report_geedy_purchase
+msgid "<strong>Specifications</strong>"
+msgstr ""
+
+#. module: geedy_purchase
+#: model_terms:ir.actions.act_window,help:geedy_purchase.geedy_purchase_form_action
+msgid ""
+"A purchase request is an instruction to Purchasing to procure\n"
+"            a certain quantity of materials services, so that they are\n"
+"            available at a certain point in time."
+msgstr ""
+
+#. module: geedy_purchase
+#: code:addons/geedy_purchase/models/stock_move.py:0
+#, python-format
+msgid ""
+"A sale/manufacturing order that generated this purchase request has been "
+"cancelled/deleted. Check if an action is needed."
+msgstr ""
+
+#. module: geedy_purchase
+#: model:ir.model.fields,field_description:geedy_purchase.field_geedy_purchase__message_needaction
+#: model:ir.model.fields,field_description:geedy_purchase.field_geedy_purchase_line__message_needaction
+msgid "Action Needed"
+msgstr ""
+
+#. module: geedy_purchase
+#: model:ir.model.fields,field_description:geedy_purchase.field_geedy_purchase__activity_ids
+#: model:ir.model.fields,field_description:geedy_purchase.field_geedy_purchase_line__activity_ids
+msgid "Activities"
+msgstr ""
+
+#. module: geedy_purchase
+#: model:ir.model.fields,field_description:geedy_purchase.field_geedy_purchase__activity_exception_decoration
+#: model:ir.model.fields,field_description:geedy_purchase.field_geedy_purchase_line__activity_exception_decoration
+msgid "Activity Exception Decoration"
+msgstr ""
+
+#. module: geedy_purchase
+#: model:ir.model.fields,field_description:geedy_purchase.field_geedy_purchase__activity_state
+#: model:ir.model.fields,field_description:geedy_purchase.field_geedy_purchase_line__activity_state
+msgid "Activity State"
+msgstr ""
+
+#. module: geedy_purchase
+#: model:ir.model.fields,field_description:geedy_purchase.field_geedy_purchase__activity_type_icon
+#: model:ir.model.fields,field_description:geedy_purchase.field_geedy_purchase_line__activity_type_icon
+msgid "Activity Type Icon"
+msgstr ""
+
+#. module: geedy_purchase
+#: model_terms:ir.ui.view,arch_db:geedy_purchase.geedy_purchase_line_search
+msgid "All Bought"
+msgstr ""
+
+#. module: geedy_purchase
+#: model:ir.model.fields,field_description:geedy_purchase.field_geedy_purchase_allocation__allocated_product_qty
+msgid "Allocated Quantity"
+msgstr ""
+
+#. module: geedy_purchase
+#: model_terms:ir.ui.view,arch_db:geedy_purchase.geedy_purchase_allocation
+#: model_terms:ir.ui.view,arch_db:geedy_purchase.geedy_purchase_line_form
+msgid "Allocations"
+msgstr ""
+
+#. module: geedy_purchase
+#: model:ir.model.fields,field_description:geedy_purchase.field_geedy_purchase_line__analytic_account_id
+#: model_terms:ir.ui.view,arch_db:geedy_purchase.geedy_purchase_line_search
+msgid "Analytic Account"
+msgstr "Analitikus gyűjtőkód könyvelés"
+
+#. module: geedy_purchase
+#: model:ir.model.fields,field_description:geedy_purchase.field_geedy_purchase_line__analytic_tag_ids
+msgid "Analytic Tags"
+msgstr ""
+
+#. module: geedy_purchase
+#: model_terms:ir.ui.view,arch_db:geedy_purchase.view_geedy_purchase_form
+msgid "Approve"
+msgstr ""
+
+#. module: geedy_purchase
+#: model:ir.model.fields.selection,name:geedy_purchase.selection__geedy_purchase__state__approved
+#: model_terms:ir.ui.view,arch_db:geedy_purchase.geedy_purchase_line_search
+#: model_terms:ir.ui.view,arch_db:geedy_purchase.view_geedy_purchase_search
+msgid "Approved"
+msgstr ""
+
+#. module: geedy_purchase
+#: model:ir.model.fields,field_description:geedy_purchase.field_geedy_purchase__assigned_to
+msgid "Approver"
+msgstr ""
+
+#. module: geedy_purchase
+#: model:ir.model.fields,field_description:geedy_purchase.field_geedy_purchase_line__assigned_to
+#: model_terms:ir.ui.view,arch_db:geedy_purchase.geedy_purchase_line_search
+#: model_terms:ir.ui.view,arch_db:geedy_purchase.view_geedy_purchase_search
+msgid "Assigned to"
+msgstr ""
+
+#. module: geedy_purchase
+#: model_terms:ir.ui.view,arch_db:geedy_purchase.geedy_purchase_line_search
+#: model_terms:ir.ui.view,arch_db:geedy_purchase.view_geedy_purchase_search
+msgid "Assigned to me"
+msgstr ""
+
+#. module: geedy_purchase
+#: model_terms:ir.ui.view,arch_db:geedy_purchase.geedy_purchase_line_search
+msgid "At least a Draft PO has been created"
+msgstr ""
+
+#. module: geedy_purchase
+#: model_terms:ir.ui.view,arch_db:geedy_purchase.geedy_purchase_line_search
+msgid "At least a PO has been completed"
+msgstr ""
+
+#. module: geedy_purchase
+#: model_terms:ir.ui.view,arch_db:geedy_purchase.geedy_purchase_line_search
+msgid "At least a PO has been confirmed"
+msgstr ""
+
+#. module: geedy_purchase
+#: model:ir.model.fields,field_description:geedy_purchase.field_geedy_purchase__message_attachment_count
+#: model:ir.model.fields,field_description:geedy_purchase.field_geedy_purchase_line__message_attachment_count
+msgid "Attachment Count"
+msgstr ""
+
+#. module: geedy_purchase
+#: model_terms:ir.ui.view,arch_db:geedy_purchase.view_geedy_purchase_line_make_purchase_order
+msgid "Cancel"
+msgstr ""
+
+#. module: geedy_purchase
+#: model:ir.model.fields,field_description:geedy_purchase.field_geedy_purchase_line__cancelled
+msgid "Cancelled"
+msgstr ""
+
+#. module: geedy_purchase
+#: model_terms:ir.ui.view,arch_db:geedy_purchase.geedy_purchase_line_search
+msgid "Cancelled Quantity"
+msgstr ""
+
+#. module: geedy_purchase
+#: model:ir.model.fields,help:geedy_purchase.field_product_product__geedy_purchase
+#: model:ir.model.fields,help:geedy_purchase.field_product_template__geedy_purchase
+msgid ""
+"Check this box to generate Purchase Request instead of generating Requests "
+"For Quotation from procurement."
+msgstr ""
+
+#. module: geedy_purchase
+#: model_terms:ir.actions.act_window,help:geedy_purchase.geedy_purchase_form_action
+msgid "Click to start a new purchase request process."
+msgstr ""
+
+#. module: geedy_purchase
+#: model:ir.model.fields,field_description:geedy_purchase.field_geedy_purchase__company_id
+#: model:ir.model.fields,field_description:geedy_purchase.field_geedy_purchase_allocation__company_id
+#: model:ir.model.fields,field_description:geedy_purchase.field_geedy_purchase_line__company_id
+msgid "Company"
+msgstr "Vállalat"
+
+#. module: geedy_purchase
+#: model:ir.model.fields,field_description:geedy_purchase.field_geedy_purchase_line_make_purchase_order_item__keep_description
+msgid "Copy descriptions to new PO"
+msgstr ""
+
+#. module: geedy_purchase
+#: model:ir.actions.act_window,name:geedy_purchase.action_geedy_purchase_line_make_purchase_order
+#: model_terms:ir.ui.view,arch_db:geedy_purchase.view_geedy_purchase_form
+#: model_terms:ir.ui.view,arch_db:geedy_purchase.view_geedy_purchase_line_make_purchase_order
+#, fuzzy
+msgid "Create RFQ"
+msgstr "Készítette"
+
+#. module: geedy_purchase
+#: model:ir.model.fields,field_description:geedy_purchase.field_stock_move__created_geedy_purchase_line_id
+msgid "Created Purchase Request Line"
+msgstr ""
+
+#. module: geedy_purchase
+#: model:ir.model.fields,field_description:geedy_purchase.field_geedy_purchase__create_uid
+#: model:ir.model.fields,field_description:geedy_purchase.field_geedy_purchase_allocation__create_uid
+#: model:ir.model.fields,field_description:geedy_purchase.field_geedy_purchase_line__create_uid
+#: model:ir.model.fields,field_description:geedy_purchase.field_geedy_purchase_line_make_purchase_order__create_uid
+#: model:ir.model.fields,field_description:geedy_purchase.field_geedy_purchase_line_make_purchase_order_item__create_uid
+msgid "Created by"
+msgstr "Készítette"
+
+#. module: geedy_purchase
+#: model:ir.model.fields,field_description:geedy_purchase.field_geedy_purchase__create_date
+#: model:ir.model.fields,field_description:geedy_purchase.field_geedy_purchase_allocation__create_date
+#: model:ir.model.fields,field_description:geedy_purchase.field_geedy_purchase_line__create_date
+#: model:ir.model.fields,field_description:geedy_purchase.field_geedy_purchase_line_make_purchase_order__create_date
+#: model:ir.model.fields,field_description:geedy_purchase.field_geedy_purchase_line_make_purchase_order_item__create_date
+msgid "Created on"
+msgstr "Létrehozás dátuma"
+
+#. module: geedy_purchase
+#: model:ir.model.fields,field_description:geedy_purchase.field_geedy_purchase__date_start
+#: model:ir.model.fields,field_description:geedy_purchase.field_geedy_purchase_line__date_start
+msgid "Creation date"
+msgstr ""
+
+#. module: geedy_purchase
+#: model:ir.model.fields,field_description:geedy_purchase.field_geedy_purchase_line__currency_id
+msgid "Currency"
+msgstr ""
+
+#. module: geedy_purchase
+#: model:ir.model.fields,help:geedy_purchase.field_geedy_purchase__date_start
+#: model:ir.model.fields,help:geedy_purchase.field_geedy_purchase_line__date_start
+msgid "Date when the user initiated the request."
+msgstr ""
+
+#. module: geedy_purchase
+#: model:ir.model.fields,field_description:geedy_purchase.field_geedy_purchase__description
+#: model:ir.model.fields,field_description:geedy_purchase.field_geedy_purchase_line__name
+#: model:ir.model.fields,field_description:geedy_purchase.field_geedy_purchase_line_make_purchase_order_item__name
+msgid "Description"
+msgstr "Leírás"
+
+#. module: geedy_purchase
+#: model_terms:ir.ui.view,arch_db:geedy_purchase.view_geedy_purchase_line_make_purchase_order
+msgid "Details"
+msgstr ""
+
+#. module: geedy_purchase
+#: model:ir.model.fields,field_description:geedy_purchase.field_product_template__display_name
+#: model:ir.model.fields,field_description:geedy_purchase.field_purchase_order__display_name
+#: model:ir.model.fields,field_description:geedy_purchase.field_purchase_order_line__display_name
+#: model:ir.model.fields,field_description:geedy_purchase.field_geedy_purchase__display_name
+#: model:ir.model.fields,field_description:geedy_purchase.field_geedy_purchase_allocation__display_name
+#: model:ir.model.fields,field_description:geedy_purchase.field_geedy_purchase_line__display_name
+#: model:ir.model.fields,field_description:geedy_purchase.field_geedy_purchase_line_make_purchase_order__display_name
+#: model:ir.model.fields,field_description:geedy_purchase.field_geedy_purchase_line_make_purchase_order_item__display_name
+#: model:ir.model.fields,field_description:geedy_purchase.field_stock_move__display_name
+#: model:ir.model.fields,field_description:geedy_purchase.field_stock_move_line__display_name
+#: model:ir.model.fields,field_description:geedy_purchase.field_stock_picking__display_name
+#: model:ir.model.fields,field_description:geedy_purchase.field_stock_rule__display_name
+#: model:ir.model.fields,field_description:geedy_purchase.field_stock_warehouse_orderpoint__display_name
+msgid "Display Name"
+msgstr ""
+
+#. module: geedy_purchase
+#: model:ir.model.fields.selection,name:geedy_purchase.selection__geedy_purchase__state__done
+#: model_terms:ir.ui.view,arch_db:geedy_purchase.view_geedy_purchase_form
+#: model_terms:ir.ui.view,arch_db:geedy_purchase.view_geedy_purchase_search
+msgid "Done"
+msgstr ""
+
+#. module: geedy_purchase
+#: model:ir.model.fields,field_description:geedy_purchase.field_geedy_purchase_line__move_dest_ids
+msgid "Downstream Moves"
+msgstr ""
+
+#. module: geedy_purchase
+#: model:ir.model.fields.selection,name:geedy_purchase.selection__geedy_purchase__state__draft
+#: model_terms:ir.ui.view,arch_db:geedy_purchase.geedy_purchase_line_search
+#: model_terms:ir.ui.view,arch_db:geedy_purchase.view_geedy_purchase_search
+msgid "Draft"
+msgstr "Tervezet"
+
+#. module: geedy_purchase
+#: code:addons/geedy_purchase/wizard/geedy_purchase_line_make_purchase_order.py:0
+#, python-format
+msgid "Enter a positive quantity."
+msgstr ""
+
+#. module: geedy_purchase
+#: code:addons/geedy_purchase/wizard/geedy_purchase_line_make_purchase_order.py:0
+#, python-format
+msgid "Enter a supplier."
+msgstr ""
+
+#. module: geedy_purchase
+#: model:ir.model.fields,field_description:geedy_purchase.field_geedy_purchase_line__estimated_cost
+msgid "Estimated Cost"
+msgstr ""
+
+#. module: geedy_purchase
+#: model:ir.model.fields,help:geedy_purchase.field_geedy_purchase_line__estimated_cost
+msgid "Estimated cost of Purchase Request Line, not propagated to PO."
+msgstr ""
+
+#. module: geedy_purchase
+#: model_terms:ir.ui.view,arch_db:geedy_purchase.view_geedy_purchase_line_make_purchase_order
+msgid "Existing RFQ to update:"
+msgstr ""
+
+#. module: geedy_purchase
+#: model:ir.model.fields,field_description:geedy_purchase.field_geedy_purchase__message_follower_ids
+#: model:ir.model.fields,field_description:geedy_purchase.field_geedy_purchase_line__message_follower_ids
+msgid "Followers"
+msgstr ""
+
+#. module: geedy_purchase
+#: model:ir.model.fields,field_description:geedy_purchase.field_geedy_purchase__message_channel_ids
+#: model:ir.model.fields,field_description:geedy_purchase.field_geedy_purchase_line__message_channel_ids
+msgid "Followers (Channels)"
+msgstr ""
+
+#. module: geedy_purchase
+#: model:ir.model.fields,field_description:geedy_purchase.field_geedy_purchase__message_partner_ids
+#: model:ir.model.fields,field_description:geedy_purchase.field_geedy_purchase_line__message_partner_ids
+msgid "Followers (Partners)"
+msgstr ""
+
+#. module: geedy_purchase
+#: model:ir.model.fields,help:geedy_purchase.field_geedy_purchase__activity_type_icon
+#: model:ir.model.fields,help:geedy_purchase.field_geedy_purchase_line__activity_type_icon
+msgid "Font awesome icon e.g. fa-tasks"
+msgstr ""
+
+#. module: geedy_purchase
+#: code:addons/geedy_purchase/models/geedy_purchase_allocation.py:0
+#, python-format
+msgid ""
+"From last reception this quantity has been allocated to this purchase request"
+msgstr ""
+
+#. module: geedy_purchase
+#: model_terms:ir.ui.view,arch_db:geedy_purchase.purchase_order_line_search_sub
+#, fuzzy
+msgid "Group By"
+msgstr "Csoportosítás ezzel..."
+
+#. module: geedy_purchase
+#: model_terms:ir.ui.view,arch_db:geedy_purchase.geedy_purchase_line_search
+#: model_terms:ir.ui.view,arch_db:geedy_purchase.view_geedy_purchase_search
+msgid "Group By..."
+msgstr "Csoportosítás ezzel..."
+
+#. module: geedy_purchase
+#: model_terms:ir.ui.view,arch_db:geedy_purchase.purchase_order_line_search_sub
+msgid "Hide cancelled lines"
+msgstr ""
+
+#. module: geedy_purchase
+#: model:ir.model.fields,field_description:geedy_purchase.field_product_template__id
+#: model:ir.model.fields,field_description:geedy_purchase.field_purchase_order__id
+#: model:ir.model.fields,field_description:geedy_purchase.field_purchase_order_line__id
+#: model:ir.model.fields,field_description:geedy_purchase.field_geedy_purchase__id
+#: model:ir.model.fields,field_description:geedy_purchase.field_geedy_purchase_allocation__id
+#: model:ir.model.fields,field_description:geedy_purchase.field_geedy_purchase_line__id
+#: model:ir.model.fields,field_description:geedy_purchase.field_geedy_purchase_line_make_purchase_order__id
+#: model:ir.model.fields,field_description:geedy_purchase.field_geedy_purchase_line_make_purchase_order_item__id
+#: model:ir.model.fields,field_description:geedy_purchase.field_stock_move__id
+#: model:ir.model.fields,field_description:geedy_purchase.field_stock_move_line__id
+#: model:ir.model.fields,field_description:geedy_purchase.field_stock_picking__id
+#: model:ir.model.fields,field_description:geedy_purchase.field_stock_rule__id
+#: model:ir.model.fields,field_description:geedy_purchase.field_stock_warehouse_orderpoint__id
+msgid "ID"
+msgstr "Azonosító ID"
+
+#. module: geedy_purchase
+#: model:ir.model.fields,field_description:geedy_purchase.field_geedy_purchase__activity_exception_icon
+#: model:ir.model.fields,field_description:geedy_purchase.field_geedy_purchase_line__activity_exception_icon
+msgid "Icon"
+msgstr ""
+
+#. module: geedy_purchase
+#: model:ir.model.fields,help:geedy_purchase.field_geedy_purchase__activity_exception_icon
+#: model:ir.model.fields,help:geedy_purchase.field_geedy_purchase_line__activity_exception_icon
+msgid "Icon to indicate an exception activity."
+msgstr ""
+
+#. module: geedy_purchase
+#: model:ir.model.fields,help:geedy_purchase.field_geedy_purchase__message_needaction
+#: model:ir.model.fields,help:geedy_purchase.field_geedy_purchase__message_unread
+#: model:ir.model.fields,help:geedy_purchase.field_geedy_purchase_line__message_needaction
+#: model:ir.model.fields,help:geedy_purchase.field_geedy_purchase_line__message_unread
+msgid "If checked, new messages require your attention."
+msgstr ""
+
+#. module: geedy_purchase
+#: model:ir.model.fields,help:geedy_purchase.field_geedy_purchase__message_has_error
+#: model:ir.model.fields,help:geedy_purchase.field_geedy_purchase__message_has_sms_error
+#: model:ir.model.fields,help:geedy_purchase.field_geedy_purchase_line__message_has_error
+#: model:ir.model.fields,help:geedy_purchase.field_geedy_purchase_line__message_has_sms_error
+msgid "If checked, some messages have a delivery error."
+msgstr ""
+
+#. module: geedy_purchase
+#: model:ir.model.fields,field_description:geedy_purchase.field_geedy_purchase__message_is_follower
+#: model:ir.model.fields,field_description:geedy_purchase.field_geedy_purchase_line__message_is_follower
+msgid "Is Follower"
+msgstr ""
+
+#. module: geedy_purchase
+#: model:ir.model.fields,field_description:geedy_purchase.field_geedy_purchase__is_editable
+#: model:ir.model.fields,field_description:geedy_purchase.field_geedy_purchase_line__is_editable
+msgid "Is editable"
+msgstr ""
+
+#. module: geedy_purchase
+#: model:ir.model.fields,field_description:geedy_purchase.field_geedy_purchase_line_make_purchase_order__item_ids
+msgid "Items"
+msgstr ""
+
+#. module: geedy_purchase
+#: model:ir.model.fields,field_description:geedy_purchase.field_product_template____last_update
+#: model:ir.model.fields,field_description:geedy_purchase.field_purchase_order____last_update
+#: model:ir.model.fields,field_description:geedy_purchase.field_purchase_order_line____last_update
+#: model:ir.model.fields,field_description:geedy_purchase.field_geedy_purchase____last_update
+#: model:ir.model.fields,field_description:geedy_purchase.field_geedy_purchase_allocation____last_update
+#: model:ir.model.fields,field_description:geedy_purchase.field_geedy_purchase_line____last_update
+#: model:ir.model.fields,field_description:geedy_purchase.field_geedy_purchase_line_make_purchase_order____last_update
+#: model:ir.model.fields,field_description:geedy_purchase.field_geedy_purchase_line_make_purchase_order_item____last_update
+#: model:ir.model.fields,field_description:geedy_purchase.field_stock_move____last_update
+#: model:ir.model.fields,field_description:geedy_purchase.field_stock_move_line____last_update
+#: model:ir.model.fields,field_description:geedy_purchase.field_stock_picking____last_update
+#: model:ir.model.fields,field_description:geedy_purchase.field_stock_rule____last_update
+#: model:ir.model.fields,field_description:geedy_purchase.field_stock_warehouse_orderpoint____last_update
+msgid "Last Modified on"
+msgstr ""
+
+#. module: geedy_purchase
+#: model:ir.model.fields,field_description:geedy_purchase.field_geedy_purchase__write_uid
+#: model:ir.model.fields,field_description:geedy_purchase.field_geedy_purchase_allocation__write_uid
+#: model:ir.model.fields,field_description:geedy_purchase.field_geedy_purchase_line__write_uid
+#: model:ir.model.fields,field_description:geedy_purchase.field_geedy_purchase_line_make_purchase_order__write_uid
+#: model:ir.model.fields,field_description:geedy_purchase.field_geedy_purchase_line_make_purchase_order_item__write_uid
+msgid "Last Updated by"
+msgstr "Utoljára frissítve, által"
+
+#. module: geedy_purchase
+#: model:ir.model.fields,field_description:geedy_purchase.field_geedy_purchase__write_date
+#: model:ir.model.fields,field_description:geedy_purchase.field_geedy_purchase_allocation__write_date
+#: model:ir.model.fields,field_description:geedy_purchase.field_geedy_purchase_line__write_date
+#: model:ir.model.fields,field_description:geedy_purchase.field_geedy_purchase_line_make_purchase_order__write_date
+#: model:ir.model.fields,field_description:geedy_purchase.field_geedy_purchase_line_make_purchase_order_item__write_date
+msgid "Last Updated on"
+msgstr "Utoljára frissítve ekkor"
+
+#. module: geedy_purchase
+#: model_terms:ir.ui.view,arch_db:geedy_purchase.view_geedy_purchase_form
+msgid "Lines"
+msgstr ""
+
+#. module: geedy_purchase
+#: model:ir.model.fields,field_description:geedy_purchase.field_geedy_purchase__message_main_attachment_id
+#: model:ir.model.fields,field_description:geedy_purchase.field_geedy_purchase_line__message_main_attachment_id
+msgid "Main Attachment"
+msgstr ""
+
+#. module: geedy_purchase
+#: model_terms:ir.ui.view,arch_db:geedy_purchase.purchase_order_line_form2_sub
+msgid "Manual Invoices"
+msgstr ""
+
+#. module: geedy_purchase
+#: model:ir.model.fields,field_description:geedy_purchase.field_geedy_purchase_line_make_purchase_order__sync_data_planned
+msgid "Merge on PO lines with equal Scheduled Date"
+msgstr ""
+
+#. module: geedy_purchase
+#: model:ir.model.fields,field_description:geedy_purchase.field_geedy_purchase__message_has_error
+#: model:ir.model.fields,field_description:geedy_purchase.field_geedy_purchase_line__message_has_error
+msgid "Message Delivery error"
+msgstr ""
+
+#. module: geedy_purchase
+#: model:ir.model.fields,field_description:geedy_purchase.field_geedy_purchase__message_ids
+#: model:ir.model.fields,field_description:geedy_purchase.field_geedy_purchase_line__message_ids
+#, fuzzy
+msgid "Messages"
+msgstr "Olvasatlan üzenetek"
+
+#. module: geedy_purchase
+#: model:ir.model,name:geedy_purchase.model_stock_warehouse_orderpoint
+msgid "Minimum Inventory Rule"
+msgstr ""
+
+#. module: geedy_purchase
+#: model_terms:ir.ui.view,arch_db:geedy_purchase.geedy_purchase_line_search
+#: model_terms:ir.ui.view,arch_db:geedy_purchase.view_geedy_purchase_search
+msgid "My requests"
+msgstr ""
+
+#. module: geedy_purchase
+#: model_terms:ir.ui.view,arch_db:geedy_purchase.view_geedy_purchase_line_make_purchase_order
+msgid "New PO details:"
+msgstr ""
+
+#. module: geedy_purchase
+#: model:ir.model.fields,field_description:geedy_purchase.field_geedy_purchase__activity_date_deadline
+#: model:ir.model.fields,field_description:geedy_purchase.field_geedy_purchase_line__activity_date_deadline
+msgid "Next Activity Deadline"
+msgstr ""
+
+#. module: geedy_purchase
+#: model:ir.model.fields,field_description:geedy_purchase.field_geedy_purchase__activity_summary
+#: model:ir.model.fields,field_description:geedy_purchase.field_geedy_purchase_line__activity_summary
+msgid "Next Activity Summary"
+msgstr ""
+
+#. module: geedy_purchase
+#: model:ir.model.fields,field_description:geedy_purchase.field_geedy_purchase__activity_type_id
+#: model:ir.model.fields,field_description:geedy_purchase.field_geedy_purchase_line__activity_type_id
+msgid "Next Activity Type"
+msgstr ""
+
+#. module: geedy_purchase
+#: model_terms:ir.ui.view,arch_db:geedy_purchase.geedy_purchase_line_search
+msgid "No RFQ or Purchase has been created"
+msgstr ""
+
+#. module: geedy_purchase
+#: model:ir.model.fields,field_description:geedy_purchase.field_geedy_purchase__message_needaction_counter
+#: model:ir.model.fields,field_description:geedy_purchase.field_geedy_purchase_line__message_needaction_counter
+msgid "Number of Actions"
+msgstr ""
+
+#. module: geedy_purchase
+#: model:ir.model.fields,field_description:geedy_purchase.field_geedy_purchase__message_has_error_counter
+#: model:ir.model.fields,field_description:geedy_purchase.field_geedy_purchase_line__message_has_error_counter
+msgid "Number of errors"
+msgstr ""
+
+#. module: geedy_purchase
+#: model:ir.model.fields,help:geedy_purchase.field_geedy_purchase__message_needaction_counter
+#: model:ir.model.fields,help:geedy_purchase.field_geedy_purchase_line__message_needaction_counter
+msgid "Number of messages which requires an action"
+msgstr ""
+
+#. module: geedy_purchase
+#: model:ir.model.fields,help:geedy_purchase.field_geedy_purchase__message_has_error_counter
+#: model:ir.model.fields,help:geedy_purchase.field_geedy_purchase_line__message_has_error_counter
+msgid "Number of messages with delivery error"
+msgstr ""
+
+#. module: geedy_purchase
+#: model:ir.model.fields,help:geedy_purchase.field_geedy_purchase__message_unread_counter
+#: model:ir.model.fields,help:geedy_purchase.field_geedy_purchase_line__message_unread_counter
+#, fuzzy
+msgid "Number of unread messages"
+msgstr "Olvasatlan üzenetek"
+
+#. module: geedy_purchase
+#: model:ir.model.fields,field_description:geedy_purchase.field_geedy_purchase_allocation__open_product_qty
+#: model_terms:ir.ui.view,arch_db:geedy_purchase.geedy_purchase_line_search
+msgid "Open Quantity"
+msgstr ""
+
+#. module: geedy_purchase
+#: model_terms:ir.ui.view,arch_db:geedy_purchase.purchase_order_line_search_sub
+msgid "Order Reference"
+msgstr ""
+
+#. module: geedy_purchase
+#: code:addons/geedy_purchase/models/purchase_order.py:0
+#, python-format
+msgid "Order confirmation %s for your Request %s"
+msgstr ""
+
+#. module: geedy_purchase
+#: model:ir.model.fields,field_description:geedy_purchase.field_geedy_purchase_line__orderpoint_id
+msgid "Orderpoint"
+msgstr ""
+
+#. module: geedy_purchase
+#: model:ir.model.fields,field_description:geedy_purchase.field_geedy_purchase_line__description
+#, fuzzy
+msgid "PR Description"
+msgstr "Leírás"
+
+#. module: geedy_purchase
+#: model:ir.model.fields,field_description:geedy_purchase.field_geedy_purchase_line__pending_qty_to_receive
+#: model_terms:ir.ui.view,arch_db:geedy_purchase.geedy_purchase_line_search
+msgid "Pending Qty to Receive"
+msgstr ""
+
+#. module: geedy_purchase
+#: model:ir.model.fields,field_description:geedy_purchase.field_geedy_purchase__picking_type_id
+msgid "Picking Type"
+msgstr ""
+
+#. module: geedy_purchase
+#: code:addons/geedy_purchase/wizard/geedy_purchase_line_make_purchase_order.py:0
+#, python-format
+msgid "Please select a product for all lines"
+msgstr ""
+
+#. module: geedy_purchase
+#: model:ir.model.fields,field_description:geedy_purchase.field_geedy_purchase_line__supplier_id
+msgid "Preferred supplier"
+msgstr ""
+
+#. module: geedy_purchase
+#: model:ir.model.fields,field_description:geedy_purchase.field_geedy_purchase__group_id
+msgid "Procurement Group"
+msgstr ""
+
+#. module: geedy_purchase
+#: model:ir.model.fields,field_description:geedy_purchase.field_geedy_purchase__product_id
+#: model:ir.model.fields,field_description:geedy_purchase.field_geedy_purchase_allocation__product_id
+#: model:ir.model.fields,field_description:geedy_purchase.field_geedy_purchase_line__product_id
+#: model:ir.model.fields,field_description:geedy_purchase.field_geedy_purchase_line_make_purchase_order_item__product_id
+#: model_terms:ir.ui.view,arch_db:geedy_purchase.geedy_purchase_line_search
+msgid "Product"
+msgstr ""
+
+#. module: geedy_purchase
+#: model:ir.model,name:geedy_purchase.model_stock_move_line
+msgid "Product Moves (Stock Move Line)"
+msgstr ""
+
+#. module: geedy_purchase
+#: model:ir.model,name:geedy_purchase.model_product_template
+msgid "Product Template"
+msgstr ""
+
+#. module: geedy_purchase
+#: model_terms:ir.ui.view,arch_db:geedy_purchase.report_geedy_purchase
+#: model_terms:ir.ui.view,arch_db:geedy_purchase.view_geedy_purchase_form
+msgid "Products"
+msgstr ""
+
+#. module: geedy_purchase
+#: model:ir.model.fields,field_description:geedy_purchase.field_geedy_purchase__line_ids
+msgid "Products to Purchase"
+msgstr ""
+
+#. module: geedy_purchase
+#: model_terms:ir.ui.view,arch_db:geedy_purchase.geedy_purchase_line_search
+msgid "Purchase Confirmed"
+msgstr ""
+
+#. module: geedy_purchase
+#: model_terms:ir.ui.view,arch_db:geedy_purchase.geedy_purchase_line_search
+msgid "Purchase Done"
+msgstr ""
+
+#. module: geedy_purchase
+#: model:ir.model.fields,field_description:geedy_purchase.field_geedy_purchase_allocation__purchase_line_id
+msgid "Purchase Line"
+msgstr ""
+
+#. module: geedy_purchase
+#: model:ir.model,name:geedy_purchase.model_purchase_order
+#: model:ir.model.fields,field_description:geedy_purchase.field_geedy_purchase_line_make_purchase_order__purchase_order_id
+msgid "Purchase Order"
+msgstr ""
+
+#. module: geedy_purchase
+#: model:ir.model,name:geedy_purchase.model_purchase_order_line
+msgid "Purchase Order Line"
+msgstr ""
+
+#. module: geedy_purchase
+#: model:ir.model.fields,field_description:geedy_purchase.field_geedy_purchase_line__purchase_lines
+#: model_terms:ir.ui.view,arch_db:geedy_purchase.purchase_order_line_form2_sub
+#: model_terms:ir.ui.view,arch_db:geedy_purchase.purchase_order_line_tree_sub
+#: model_terms:ir.ui.view,arch_db:geedy_purchase.geedy_purchase_line_form
+#: model_terms:ir.ui.view,arch_db:geedy_purchase.view_geedy_purchase_form
+msgid "Purchase Order Lines"
+msgstr ""
+
+#. module: geedy_purchase
+#: model_terms:ir.ui.view,arch_db:geedy_purchase.view_geedy_purchase_form
+msgid "Purchase Orders"
+msgstr ""
+
+#. module: geedy_purchase
+#: model:ir.actions.report,name:geedy_purchase.action_report_geedy_purchases
+#: model:ir.model,name:geedy_purchase.model_geedy_purchase
+#: model:ir.model.fields,field_description:geedy_purchase.field_product_product__geedy_purchase
+#: model:ir.model.fields,field_description:geedy_purchase.field_product_template__geedy_purchase
+#: model:ir.model.fields,field_description:geedy_purchase.field_geedy_purchase_line__request_id
+#: model:ir.model.fields,field_description:geedy_purchase.field_geedy_purchase_line_make_purchase_order_item__request_id
+#: model:ir.module.category,name:geedy_purchase.module_category_geedy_purchase
+#: model_terms:ir.ui.view,arch_db:geedy_purchase.report_geedy_purchase
+#: model_terms:ir.ui.view,arch_db:geedy_purchase.view_geedy_purchase_form
+#: model_terms:ir.ui.view,arch_db:geedy_purchase.view_geedy_purchase_search
+#: model_terms:ir.ui.view,arch_db:geedy_purchase.view_geedy_purchase_tree
+msgid "Purchase Request"
+msgstr ""
+
+#. module: geedy_purchase
+#: code:addons/geedy_purchase/models/purchase_order.py:0
+#, python-format
+msgid "Purchase Request %s has already been completed"
+msgstr ""
+
+#. module: geedy_purchase
+#: code:addons/geedy_purchase/wizard/geedy_purchase_line_make_purchase_order.py:0
+#, python-format
+msgid "Purchase Request %s is not approved"
+msgstr ""
+
+#. module: geedy_purchase
+#: model:ir.model,name:geedy_purchase.model_geedy_purchase_allocation
+#: model:ir.model.fields,field_description:geedy_purchase.field_purchase_order_line__geedy_purchase_allocation_ids
+#: model:ir.model.fields,field_description:geedy_purchase.field_geedy_purchase_line__geedy_purchase_allocation_ids
+#: model:ir.model.fields,field_description:geedy_purchase.field_stock_move__geedy_purchase_allocation_ids
+msgid "Purchase Request Allocation"
+msgstr ""
+
+#. module: geedy_purchase
+#: model_terms:ir.ui.view,arch_db:geedy_purchase.view_move_form
+#: model_terms:ir.ui.view,arch_db:geedy_purchase.view_picking_form
+msgid "Purchase Request Allocations"
+msgstr ""
+
+#. module: geedy_purchase
+#: model:ir.model,name:geedy_purchase.model_geedy_purchase_line
+#: model:ir.model.fields,field_description:geedy_purchase.field_geedy_purchase_allocation__geedy_purchase_line_id
+#: model:ir.model.fields,field_description:geedy_purchase.field_geedy_purchase_line_make_purchase_order_item__line_id
+#: model_terms:ir.ui.view,arch_db:geedy_purchase.geedy_purchase_line_form
+msgid "Purchase Request Line"
+msgstr ""
+
+#. module: geedy_purchase
+#: model:ir.model,name:geedy_purchase.model_geedy_purchase_line_make_purchase_order
+msgid "Purchase Request Line Make Purchase Order"
+msgstr ""
+
+#. module: geedy_purchase
+#: model:ir.model,name:geedy_purchase.model_geedy_purchase_line_make_purchase_order_item
+msgid "Purchase Request Line Make Purchase Order Item"
+msgstr ""
+
+#. module: geedy_purchase
+#: model:ir.model.fields,field_description:geedy_purchase.field_geedy_purchase__line_count
+msgid "Purchase Request Line count"
+msgstr ""
+
+#. module: geedy_purchase
+#: code:addons/geedy_purchase/models/purchase_order.py:0
+#: model:ir.actions.act_window,name:geedy_purchase.geedy_purchase_line_form_action
+#: model:ir.model.fields,field_description:geedy_purchase.field_purchase_order_line__geedy_purchase_lines
+#: model:ir.ui.menu,name:geedy_purchase.menu_geedy_purchase_line
+#: model:ir.ui.menu,name:geedy_purchase.menu_geedy_purchase_line_act
+#: model_terms:ir.ui.view,arch_db:geedy_purchase.purchase_order_line_form2
+#: model_terms:ir.ui.view,arch_db:geedy_purchase.purchase_order_line_form2_sub
+#: model_terms:ir.ui.view,arch_db:geedy_purchase.geedy_purchase_line_tree
+#, python-format
+msgid "Purchase Request Lines"
+msgstr ""
+
+#. module: geedy_purchase
+#: model:res.groups,name:geedy_purchase.group_geedy_purchase_manager
+msgid "Purchase Request Manager"
+msgstr ""
+
+#. module: geedy_purchase
+#: model:res.groups,name:geedy_purchase.group_geedy_purchase_user
+msgid "Purchase Request User"
+msgstr ""
+
+#. module: geedy_purchase
+#: model:mail.message.subtype,description:geedy_purchase.mt_request_approved
+#: model:mail.message.subtype,name:geedy_purchase.mt_request_approved
+msgid "Purchase Request approved"
+msgstr ""
+
+#. module: geedy_purchase
+#: model:mail.message.subtype,name:geedy_purchase.mt_request_done
+msgid "Purchase Request done"
+msgstr ""
+
+#. module: geedy_purchase
+#: model:mail.message.subtype,description:geedy_purchase.mt_request_done
+msgid "Purchase Request is done"
+msgstr ""
+
+#. module: geedy_purchase
+#: model:mail.message.subtype,description:geedy_purchase.mt_request_rejected
+#: model:mail.message.subtype,name:geedy_purchase.mt_request_rejected
+msgid "Purchase Request rejected"
+msgstr ""
+
+#. module: geedy_purchase
+#: model:mail.message.subtype,description:geedy_purchase.mt_request_to_approve
+#: model:mail.message.subtype,name:geedy_purchase.mt_request_to_approve
+msgid "Purchase Request to be approved"
+msgstr ""
+
+#. module: geedy_purchase
+#: model:ir.actions.act_window,name:geedy_purchase.action_geedy_purchase_line_product_tree
+#: model:ir.actions.act_window,name:geedy_purchase.geedy_purchase_form_action
+#: model:ir.model.fields,field_description:geedy_purchase.field_stock_move__geedy_purchase_ids
+#: model:ir.ui.menu,name:geedy_purchase.menu_geedy_purchase
+#: model:ir.ui.menu,name:geedy_purchase.menu_geedy_purchase_act
+#: model:ir.ui.menu,name:geedy_purchase.menu_geedy_purchase_pro_mgt
+msgid "Purchase Requests"
+msgstr ""
+
+#. module: geedy_purchase
+#: model:ir.model.fields,field_description:geedy_purchase.field_geedy_purchase_line__purchase_state
+#: model_terms:ir.ui.view,arch_db:geedy_purchase.geedy_purchase_line_search
+msgid "Purchase Status"
+msgstr ""
+
+#. module: geedy_purchase
+#: model:ir.ui.menu,name:geedy_purchase.parent_menu_geedy_purchase
+msgid "Purchase requests"
+msgstr ""
+
+#. module: geedy_purchase
+#: model:ir.model.fields,field_description:geedy_purchase.field_geedy_purchase__purchase_count
+msgid "Purchases count"
+msgstr ""
+
+#. module: geedy_purchase
+#: model_terms:ir.ui.view,arch_db:geedy_purchase.geedy_purchase_line_search
+msgid "Purchasing not started"
+msgstr ""
+
+#. module: geedy_purchase
+#: model:ir.model.fields,field_description:geedy_purchase.field_geedy_purchase_line__qty_cancelled
+msgid "Qty Cancelled"
+msgstr ""
+
+#. module: geedy_purchase
+#: model:ir.model.fields,field_description:geedy_purchase.field_geedy_purchase_line__qty_done
+msgid "Qty Done"
+msgstr ""
+
+#. module: geedy_purchase
+#: model:ir.model.fields,field_description:geedy_purchase.field_geedy_purchase_line__qty_in_progress
+msgid "Qty In Progress"
+msgstr ""
+
+#. module: geedy_purchase
+#: model:ir.model.fields,field_description:geedy_purchase.field_geedy_purchase_line__product_qty
+msgid "Quantity"
+msgstr ""
+
+#. module: geedy_purchase
+#: model:ir.model.fields,help:geedy_purchase.field_geedy_purchase_line__qty_cancelled
+msgid "Quantity cancelled"
+msgstr ""
+
+#. module: geedy_purchase
+#: model:ir.model.fields,help:geedy_purchase.field_geedy_purchase_line__qty_done
+msgid "Quantity completed"
+msgstr ""
+
+#. module: geedy_purchase
+#: model:ir.model.fields,help:geedy_purchase.field_geedy_purchase_line__qty_in_progress
+msgid "Quantity in progress."
+msgstr ""
+
+#. module: geedy_purchase
+#: model:ir.model.fields,help:geedy_purchase.field_geedy_purchase_allocation__allocated_product_qty
+msgid ""
+"Quantity of the purchase request line allocated to the stockmove, in the "
+"default UoM of the product"
+msgstr ""
+
+#. module: geedy_purchase
+#: model:ir.model.fields,help:geedy_purchase.field_geedy_purchase_allocation__requested_product_uom_qty
+msgid ""
+"Quantity of the purchase request line allocated to thestock move, in the UoM "
+"of the Purchase Request Line"
+msgstr ""
+
+#. module: geedy_purchase
+#: model:ir.model.fields,field_description:geedy_purchase.field_geedy_purchase_line_make_purchase_order_item__product_qty
+msgid "Quantity to purchase"
+msgstr ""
+
+#. module: geedy_purchase
+#: code:addons/geedy_purchase/wizard/geedy_purchase_line_make_purchase_order.py:0
+#, python-format
+msgid "RFQ"
+msgstr ""
+
+#. module: geedy_purchase
+#: model:ir.model.fields,field_description:geedy_purchase.field_geedy_purchase_line__purchased_qty
+msgid "RFQ/PO Qty"
+msgstr ""
+
+#. module: geedy_purchase
+#: code:addons/geedy_purchase/models/stock_move_line.py:0
+#: code:addons/geedy_purchase/models/stock_picking.py:0
+#, python-format
+msgid "Receipt confirmation %s for your Request %s"
+msgstr ""
+
+#. module: geedy_purchase
+#: code:addons/geedy_purchase/models/stock_move_line.py:0
+#, python-format
+msgid "Receipt confirmation for Request %s"
+msgstr ""
+
+#. module: geedy_purchase
+#: model_terms:ir.ui.view,arch_db:geedy_purchase.view_geedy_purchase_form
+msgid "Reject"
+msgstr ""
+
+#. module: geedy_purchase
+#: model:ir.model.fields.selection,name:geedy_purchase.selection__geedy_purchase__state__rejected
+#: model_terms:ir.ui.view,arch_db:geedy_purchase.geedy_purchase_line_search
+#: model_terms:ir.ui.view,arch_db:geedy_purchase.view_geedy_purchase_search
+msgid "Rejected"
+msgstr ""
+
+#. module: geedy_purchase
+#: model_terms:ir.ui.view,arch_db:geedy_purchase.geedy_purchase_line_search
+msgid "Request"
+msgstr ""
+
+#. module: geedy_purchase
+#: model:ir.model.fields,field_description:geedy_purchase.field_geedy_purchase_line__date_required
+msgid "Request Date"
+msgstr ""
+
+#. module: geedy_purchase
+#: model:ir.model.fields,field_description:geedy_purchase.field_geedy_purchase__name
+msgid "Request Reference"
+msgstr ""
+
+#. module: geedy_purchase
+#: model_terms:ir.ui.view,arch_db:geedy_purchase.view_geedy_purchase_form
+msgid "Request approval"
+msgstr ""
+
+#. module: geedy_purchase
+#: model_terms:ir.ui.view,arch_db:geedy_purchase.geedy_purchase_line_search
+#: model_terms:ir.ui.view,arch_db:geedy_purchase.view_geedy_purchase_search
+msgid "Request is approved"
+msgstr ""
+
+#. module: geedy_purchase
+#: model_terms:ir.ui.view,arch_db:geedy_purchase.view_geedy_purchase_search
+msgid "Request is done"
+msgstr ""
+
+#. module: geedy_purchase
+#: model_terms:ir.ui.view,arch_db:geedy_purchase.geedy_purchase_line_search
+#: model_terms:ir.ui.view,arch_db:geedy_purchase.view_geedy_purchase_search
+msgid "Request is rejected"
+msgstr ""
+
+#. module: geedy_purchase
+#: model_terms:ir.ui.view,arch_db:geedy_purchase.geedy_purchase_line_search
+#: model_terms:ir.ui.view,arch_db:geedy_purchase.view_geedy_purchase_search
+msgid "Request is to be approved"
+msgstr ""
+
+#. module: geedy_purchase
+#: model:ir.model.fields,field_description:geedy_purchase.field_geedy_purchase_line__request_state
+msgid "Request state"
+msgstr ""
+
+#. module: geedy_purchase
+#: model_terms:ir.ui.view,arch_db:geedy_purchase.geedy_purchase_line_search
+msgid "Request status"
+msgstr ""
+
+#. module: geedy_purchase
+#: model:ir.model.fields,field_description:geedy_purchase.field_geedy_purchase_allocation__requested_product_uom_qty
+msgid "Requested Quantity"
+msgstr ""
+
+#. module: geedy_purchase
+#: model:ir.model.fields,field_description:geedy_purchase.field_geedy_purchase__requested_by
+#: model:ir.model.fields,field_description:geedy_purchase.field_geedy_purchase_line__requested_by
+#: model_terms:ir.ui.view,arch_db:geedy_purchase.geedy_purchase_line_search
+#: model_terms:ir.ui.view,arch_db:geedy_purchase.view_geedy_purchase_search
+msgid "Requested by"
+msgstr ""
+
+#. module: geedy_purchase
+#: model_terms:ir.ui.view,arch_db:geedy_purchase.geedy_purchase_line_search
+msgid "Requested for Quotation"
+msgstr ""
+
+#. module: geedy_purchase
+#: model_terms:ir.ui.view,arch_db:geedy_purchase.view_geedy_purchase_form
+msgid "Reset"
+msgstr ""
+
+#. module: geedy_purchase
+#: model:ir.model.fields,field_description:geedy_purchase.field_geedy_purchase__activity_user_id
+#: model:ir.model.fields,field_description:geedy_purchase.field_geedy_purchase_line__activity_user_id
+msgid "Responsible User"
+msgstr ""
+
+#. module: geedy_purchase
+#: model:ir.model.fields,field_description:geedy_purchase.field_geedy_purchase__message_has_sms_error
+#: model:ir.model.fields,field_description:geedy_purchase.field_geedy_purchase_line__message_has_sms_error
+msgid "SMS Delivery error"
+msgstr ""
+
+#. module: geedy_purchase
+#: model_terms:ir.ui.view,arch_db:geedy_purchase.purchase_order_line_search_sub
+msgid "Search Purchase Order Line"
+msgstr ""
+
+#. module: geedy_purchase
+#: model_terms:ir.ui.view,arch_db:geedy_purchase.geedy_purchase_line_search
+#: model_terms:ir.ui.view,arch_db:geedy_purchase.view_geedy_purchase_search
+msgid "Search Purchase Request"
+msgstr ""
+
+#. module: geedy_purchase
+#: model:ir.model.fields,help:geedy_purchase.field_geedy_purchase_allocation__purchase_line_id
+msgid "Service Purchase Order Line"
+msgstr ""
+
+#. module: geedy_purchase
+#: code:addons/geedy_purchase/models/purchase_order.py:0
+#, python-format
+msgid "Service confirmation for Request %s"
+msgstr ""
+
+#. module: geedy_purchase
+#: model:ir.model.fields,help:geedy_purchase.field_geedy_purchase_line_make_purchase_order_item__keep_description
+msgid ""
+"Set true if you want to keep the descriptions provided in the wizard in the "
+"new PO."
+msgstr ""
+
+#. module: geedy_purchase
+#: model_terms:ir.ui.view,arch_db:geedy_purchase.view_geedy_purchase_search
+msgid "Source"
+msgstr ""
+
+#. module: geedy_purchase
+#: model:ir.model.fields,field_description:geedy_purchase.field_geedy_purchase__origin
+#: model:ir.model.fields,field_description:geedy_purchase.field_geedy_purchase_line__origin
+msgid "Source Document"
+msgstr ""
+
+#. module: geedy_purchase
+#: model:ir.model.fields,field_description:geedy_purchase.field_geedy_purchase_line__specifications
+#: model_terms:ir.ui.view,arch_db:geedy_purchase.geedy_purchase_line_form
+#: model_terms:ir.ui.view,arch_db:geedy_purchase.view_geedy_purchase_form
+msgid "Specifications"
+msgstr ""
+
+#. module: geedy_purchase
+#: model_terms:ir.ui.view,arch_db:geedy_purchase.view_geedy_purchase_search
+msgid "Start Date"
+msgstr "Kezdő dátum"
+
+#. module: geedy_purchase
+#: model:ir.model.fields,field_description:geedy_purchase.field_geedy_purchase__state
+#: model:ir.model.fields,field_description:geedy_purchase.field_geedy_purchase_allocation__purchase_state
+msgid "Status"
+msgstr "Állapot"
+
+#. module: geedy_purchase
+#: model:ir.model.fields,help:geedy_purchase.field_geedy_purchase__activity_state
+#: model:ir.model.fields,help:geedy_purchase.field_geedy_purchase_line__activity_state
+msgid ""
+"Status based on activities\n"
+"Overdue: Due date is already passed\n"
+"Today: Activity date is today\n"
+"Planned: Future activities."
+msgstr ""
+
+#. module: geedy_purchase
+#: model:ir.model,name:geedy_purchase.model_stock_move
+#: model:ir.model.fields,field_description:geedy_purchase.field_geedy_purchase_allocation__stock_move_id
+msgid "Stock Move"
+msgstr ""
+
+#. module: geedy_purchase
+#: model:ir.model.fields,field_description:geedy_purchase.field_geedy_purchase__move_count
+msgid "Stock Move count"
+msgstr ""
+
+#. module: geedy_purchase
+#: model_terms:ir.ui.view,arch_db:geedy_purchase.purchase_order_line_form2_sub
+#: model_terms:ir.ui.view,arch_db:geedy_purchase.view_geedy_purchase_form
+msgid "Stock Moves"
+msgstr ""
+
+#. module: geedy_purchase
+#: model:ir.model,name:geedy_purchase.model_stock_rule
+msgid "Stock Rule"
+msgstr ""
+
+#. module: geedy_purchase
+#: model:ir.model.fields,field_description:geedy_purchase.field_geedy_purchase_line_make_purchase_order__supplier_id
+msgid "Supplier"
+msgstr ""
+
+#. module: geedy_purchase
+#: code:addons/geedy_purchase/models/stock_move.py:0
+#, python-format
+msgid ""
+"The company of the purchase request must match with that of the location."
+msgstr ""
+
+#. module: geedy_purchase
+#: code:addons/geedy_purchase/models/purchase_order.py:0
+#, python-format
+msgid ""
+"The following requested items from Purchase Request %s have now been "
+"confirmed in Purchase Order %s:"
+msgstr ""
+
+#. module: geedy_purchase
+#: code:addons/geedy_purchase/models/stock_move_line.py:0
+#, python-format
+msgid ""
+"The following requested items from Purchase Request %s have now been "
+"received in %s using Picking %s:"
+msgstr ""
+
+#. module: geedy_purchase
+#: code:addons/geedy_purchase/models/stock_picking.py:0
+#, python-format
+msgid ""
+"The following requested items from Purchase Request %s have now been "
+"received in Incoming Shipment %s:"
+msgstr ""
+
+#. module: geedy_purchase
+#: code:addons/geedy_purchase/models/stock_move_line.py:0
+#, python-format
+msgid ""
+"The following requested items from Purchase Request %s requested by %s have "
+"now been received in %s:"
+msgstr ""
+
+#. module: geedy_purchase
+#: code:addons/geedy_purchase/models/purchase_order.py:0
+#, python-format
+msgid ""
+"The following requested services from Purchase Request %s requested by %s "
+"have now been received:"
+msgstr ""
+
+#. module: geedy_purchase
+#: code:addons/geedy_purchase/wizard/geedy_purchase_line_make_purchase_order.py:0
+#, python-format
+msgid "The purchase has already been completed."
+msgstr ""
+
+#. module: geedy_purchase
+#: model:ir.model.fields,field_description:geedy_purchase.field_geedy_purchase_line__qty_to_buy
+msgid "There is some pending qty to buy"
+msgstr ""
+
+#. module: geedy_purchase
+#: model_terms:ir.ui.view,arch_db:geedy_purchase.geedy_purchase_line_search
+#: model_terms:ir.ui.view,arch_db:geedy_purchase.view_geedy_purchase_search
+msgid "To Approve"
+msgstr ""
+
+#. module: geedy_purchase
+#: model:ir.model.fields,field_description:geedy_purchase.field_geedy_purchase__to_approve_allowed
+msgid "To Approve Allowed"
+msgstr ""
+
+#. module: geedy_purchase
+#: model:ir.model.fields.selection,name:geedy_purchase.selection__geedy_purchase__state__to_approve
+msgid "To be approved"
+msgstr ""
+
+#. module: geedy_purchase
+#: model_terms:ir.ui.view,arch_db:geedy_purchase.geedy_purchase_line_form
+#: model_terms:ir.ui.view,arch_db:geedy_purchase.view_geedy_purchase_form
+msgid "Tracking"
+msgstr ""
+
+#. module: geedy_purchase
+#: model:ir.model,name:geedy_purchase.model_stock_picking
+msgid "Transfer"
+msgstr ""
+
+#. module: geedy_purchase
+#: model:ir.model.fields,help:geedy_purchase.field_geedy_purchase__activity_exception_decoration
+#: model:ir.model.fields,help:geedy_purchase.field_geedy_purchase_line__activity_exception_decoration
+msgid "Type of the exception activity on record."
+msgstr ""
+
+#. module: geedy_purchase
+#: model_terms:ir.ui.view,arch_db:geedy_purchase.view_geedy_purchase_search
+msgid "Unassigned"
+msgstr ""
+
+#. module: geedy_purchase
+#: model_terms:ir.ui.view,arch_db:geedy_purchase.view_geedy_purchase_search
+msgid "Unassigned Request"
+msgstr ""
+
+#. module: geedy_purchase
+#: model_terms:ir.ui.view,arch_db:geedy_purchase.geedy_purchase_line_search
+msgid "Uncancelled"
+msgstr ""
+
+#. module: geedy_purchase
+#: model:ir.model.fields,field_description:geedy_purchase.field_geedy_purchase__message_unread
+#: model:ir.model.fields,field_description:geedy_purchase.field_geedy_purchase_line__message_unread
+#: model_terms:ir.ui.view,arch_db:geedy_purchase.view_geedy_purchase_search
+msgid "Unread Messages"
+msgstr "Olvasatlan üzenetek"
+
+#. module: geedy_purchase
+#: model:ir.model.fields,field_description:geedy_purchase.field_geedy_purchase__message_unread_counter
+#: model:ir.model.fields,field_description:geedy_purchase.field_geedy_purchase_line__message_unread_counter
+#, fuzzy
+msgid "Unread Messages Counter"
+msgstr "Olvasatlan üzenetek"
+
+#. module: geedy_purchase
+#: model:ir.model.fields,field_description:geedy_purchase.field_geedy_purchase_allocation__product_uom_id
+#: model:ir.model.fields,field_description:geedy_purchase.field_geedy_purchase_line__product_uom_id
+#: model:ir.model.fields,field_description:geedy_purchase.field_geedy_purchase_line_make_purchase_order_item__product_uom_id
+msgid "UoM"
+msgstr ""
+
+#. module: geedy_purchase
+#: model_terms:ir.ui.view,arch_db:geedy_purchase.purchase_order_line_search_sub
+#: model_terms:ir.ui.view,arch_db:geedy_purchase.purchase_order_line_tree_sub
+msgid "Vendor"
+msgstr ""
+
+#. module: geedy_purchase
+#: model:ir.model.fields,field_description:geedy_purchase.field_geedy_purchase__website_message_ids
+#: model:ir.model.fields,field_description:geedy_purchase.field_geedy_purchase_line__website_message_ids
+#, fuzzy
+msgid "Website Messages"
+msgstr "Olvasatlan üzenetek"
+
+#. module: geedy_purchase
+#: model:ir.model.fields,help:geedy_purchase.field_geedy_purchase__website_message_ids
+#: model:ir.model.fields,help:geedy_purchase.field_geedy_purchase_line__website_message_ids
+msgid "Website communication history"
+msgstr ""
+
+#. module: geedy_purchase
+#: model:ir.model.fields,field_description:geedy_purchase.field_geedy_purchase_line_make_purchase_order_item__wiz_id
+msgid "Wizard"
+msgstr ""
+
+#. module: geedy_purchase
+#: code:addons/geedy_purchase/models/geedy_purchase_line.py:0
+#, python-format
+msgid ""
+"You can only delete a purchase request line if the purchase request is in "
+"draft state."
+msgstr ""
+
+#. module: geedy_purchase
+#: code:addons/geedy_purchase/models/geedy_purchase.py:0
+#, python-format
+msgid ""
+"You can't request an approval for a purchase request which is empty. (%s)"
+msgstr ""
+
+#. module: geedy_purchase
+#: code:addons/geedy_purchase/wizard/geedy_purchase_line_make_purchase_order.py:0
+#, python-format
+msgid ""
+"You cannot create a single purchase order from purchase requests that have "
+"different procurement group."
+msgstr ""
+
+#. module: geedy_purchase
+#: code:addons/geedy_purchase/models/geedy_purchase.py:0
+#, python-format
+msgid "You cannot delete a purchase request which is not draft."
+msgstr ""
+
+#. module: geedy_purchase
+#: code:addons/geedy_purchase/models/geedy_purchase_line.py:0
+#, python-format
+msgid "You cannot delete a record that refers to purchase lines!"
+msgstr ""
+
+#. module: geedy_purchase
+#: code:addons/geedy_purchase/wizard/geedy_purchase_line_make_purchase_order.py:0
+#, python-format
+msgid "You have to enter a Picking Type."
+msgstr ""
+
+#. module: geedy_purchase
+#: code:addons/geedy_purchase/wizard/geedy_purchase_line_make_purchase_order.py:0
+#, python-format
+msgid "You have to select lines from the same Picking Type."
+msgstr ""
+
+#. module: geedy_purchase
+#: code:addons/geedy_purchase/wizard/geedy_purchase_line_make_purchase_order.py:0
+#, python-format
+msgid "You have to select lines from the same company."
+msgstr ""

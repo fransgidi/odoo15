@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+    <record id="view_sale_order_confirm_inherit_form" model="ir.ui.view">
+        <field name="name">sale.order.confirm.inherit.form</field>
+        <field name="model">sale.order</field>
+        <field name="inherit_id" ref="sale.view_order_form"/>
+        <field name="arch" type="xml">
+            <xpath expr="//field[@name='order_line']/form/group/group/label[@for='discount']" position="before">
+                <field name="discount_type"/>
+                <field name="fix_discount" groups="product.group_discount_per_so_line"
+                    attrs="{'invisible': [('discount_type', 'not in', ['fix'])]}"/>
+                <label for="multi_discount" groups="product.group_discount_per_so_line"
+                    attrs="{'invisible': [('discount_type', 'not in', ['multi'])]}"/>
+                <div name="multi_discount" groups="product.group_discount_per_so_line"
+                    attrs="{'invisible': [('discount_type', 'not in', ['multi'])]}">
+                    <field name="multi_discount" placeholder="50+20" class="oe_inline"/> %%
+                </div>
+            </xpath>
+            <xpath expr="//field[@name='order_line']/form/group/group/div[@name='discount']/field[@name='discount']" position="attributes">
+                <attribute name="readonly">True</attribute>
+                <!-- <attribute name="attrs">{'readonly': [('discount_type', 'not in', ['percent'])]}</attribute> -->
+            </xpath>
+            <xpath expr="//field[@name='order_line']/tree" position="attributes">
+                <attribute name="editable"/>
+            </xpath>
+        </field>
+    </record>
+
+
+</odoo>
